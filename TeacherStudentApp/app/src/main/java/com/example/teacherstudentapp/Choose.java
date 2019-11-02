@@ -7,24 +7,38 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
 
 
-public class Choose extends AppCompatActivity {
+public class Choose extends AppCompatActivity
+{
 
-    private TextView iBuddytextView, textViewChoose;
-    private Button mradioButtonOrganizer;
+    private TextView iBuddy, Areyoua;
+
+    private Button Organizer, Attendees, Submit;
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose);
+
+        iBuddy = (TextView)findViewById(R.id.iBuddytextview);
+        Areyoua = (TextView)findViewById(R.id.textViewChoose);
+        Organizer = (Button)findViewById(R.id.radioButtonOrganizer);
+        Attendees = (Button)findViewById(R.id.radioButtonAttendees);
+        Submit = (Button)findViewById(R.id.buttonSubmit);
+
+        Submit.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+
+
+            }
+
+        }
     }
-
-    miBuddytextView= (TextView) find
-
-
-//    mRegister= (Button) findViewById(R.id.registration);
-  //  mEmail= (EditText) findViewById(R.id.email);
-
 }
